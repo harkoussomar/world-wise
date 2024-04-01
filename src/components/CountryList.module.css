@@ -1,0 +1,16 @@
+.countryList {
+  width: 100%;
+  max-height: 65vh; /* Change height to max-height */
+  list-style: none;
+  overflow-y: auto; /* Change to auto */
+  overflow-x: hidden;
+
+  display: flex; /* Change to flex */
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 1.6rem;
+}
+
+/* Optional: Adjust item width to occupy two columns */
+.countryList > li {
+  flex-basis: calc(50% - 0.8rem); /* Two items per row with gap */
+}
